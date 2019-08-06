@@ -278,15 +278,14 @@
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
-                        <li><a href="well-come-to-internet-banking-login.php"><i class="mdi mdi-drone"></i>Message</a></li>
+                        <li><a href="message.php"><i class="mdi mdi-drone"></i>Message</a></li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="mdi mdi-drone"></i>
-                                <span class="hide-menu">Secure Banking</span>
+                                <span class="hide-menu">Student Information</span>
                             </a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="well-come-to-internet-banking-login.php">Login</a></li>
-                                <li><a href="well-come-to-internet-banking-register.php">Register</a></li>
-                                <li><a href="internet-banking-home.php">Home</a></li>
+                                <li><a href="all_student.php">all</a></li>
+                                <li><a href="add_student.php">add</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
