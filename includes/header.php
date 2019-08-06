@@ -51,7 +51,7 @@
 					<div class="row">
 						<div class="col-md-2">
 							<!-- START LOGO DESIGN AREA -->
-							<div class="logo">
+							<div class="logo" style="padding-top:0px;">
 								<a href="index.html"> <img src="assets/images/client-logo/logo1.png" alt="Logo"> </a>
 							</div>
 							<!-- END LOGO DESIGN AREA -->
