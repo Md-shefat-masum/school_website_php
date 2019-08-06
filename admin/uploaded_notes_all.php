@@ -11,13 +11,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">All Students</h3>
+                    <h3 class="text-themecolor">uploaded Notes</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">admin</li>
-                        <li class="breadcrumb-item active">all Student</li>
+                        <li class="breadcrumb-item active">uploads</li>
                     </ol>
                 </div>
                 <div>
@@ -38,7 +38,7 @@
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="card card-default">
+                    <div class="card card-default">
                             <div class="card-header">
                                 <div class="card-actions">
                                     <a class="" data-action="collapse"><i class="ti-minus"></i></a>
@@ -65,23 +65,23 @@
                                         </thead>
                                         <tbody>
                                             <?php 
-                                                $select = 'SELECT * FROM stdinfo ORDER BY id DESC';
+                                                $select = 'SELECT * FROM student ORDER BY id DESC';
                                                 $query = mysqli_query($con,$select);
                                                 while($data = mysqli_fetch_assoc($query))
                                                 // foreach($query as $data)
                                                 {
                                             ?>
                                             <tr>
-                                                <td><?=$data['Id']?></td>
-                                                <td><?=$data['Name']?></td>
-                                                <td><?=$data['Department']?></td>
-                                                <td><?=$data['Semester']?></td>
-                                                <td><?=$data['Email']?></td>
-                                                <td><?=$data['Phone']?></td>
-                                                <td><?=$data['Gender']?></td>
-                                                <td><?=$data['Address']?></td>
+                                                <td><?=$data['name']?></td>
+                                                <td><?=$data['institute']?></td>
+                                                <td><?=$data['semester']?></td>
+                                                <td><?=$data['phone']?></td>
+                                                <td><?=$data['gender']?></td>
+                                                <td><?=$data['email']?></td>
+                                                <td><?=$data['fname']?></td>
+                                                <td><?=$data['sub']?></td>
                                                 <td>
-                                                    <a href="update_student.php?u=<?= $data['Id'];?>" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> 
+                                                    <a href="uploads/<?= $data['file'];?>" download class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> 
                                                     <a onClick="return confirm('Delete This account?')" href="delete_student.php?d=<?= $data['Id'];?>" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a>
                                                 </td>
                                             </tr>

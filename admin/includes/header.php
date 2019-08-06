@@ -288,6 +288,15 @@
                                 <li><a href="add_student.php">add</a></li>
                             </ul>
                         </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-drone"></i>
+                                <span class="hide-menu">Uploaded notes</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="uploaded_notes_all.php">all</a></li>
+                                <li><a href="uploaded_notes_add.php">add</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
