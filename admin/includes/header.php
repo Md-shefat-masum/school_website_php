@@ -273,7 +273,7 @@
                         <li class="nav-devider"></li>
                         <li class="nav-small-cap">PERSONAL</li>
 
-                        <li> <a class=" waves-effect waves-light" href="dashboard.php"aria-expanded="false">
+                        <li> <a class=" waves-effect waves-light" href="index.php"aria-expanded="false">
                                 <i class="mdi mdi-gauge"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
@@ -295,6 +295,15 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="uploaded_notes_all.php">all</a></li>
                                 <li><a href="uploaded_notes_add.php">add</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-calendar-clock"></i>
+                                <span class="hide-menu">Notices</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="notice_all.php">all</a></li>
+                                <li><a href="notice_add.php">add</a></li>
                             </ul>
                         </li>
                     </ul>
