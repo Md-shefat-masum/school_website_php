@@ -52,20 +52,20 @@
                                     <table class="table product-overview">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
-                                                <th>Department</th>
+                                                <th>Institue</th>
                                                 <th>Semester</th>
-                                                <th>Email</th>
                                                 <th>Phone</th>
                                                 <th>Gender</th>
-                                                <th>Address</th>
+                                                <th>Email</th>
+                                                <th>File Name</th>
+                                                <th>Subject</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php 
-                                                $select = 'SELECT * FROM student ORDER BY id DESC';
+                                                $select = 'SELECT * FROM student ORDER BY sub ASC';
                                                 $query = mysqli_query($con,$select);
                                                 while($data = mysqli_fetch_assoc($query))
                                                 // foreach($query as $data)
@@ -81,8 +81,8 @@
                                                 <td><?=$data['fname']?></td>
                                                 <td><?=$data['sub']?></td>
                                                 <td>
-                                                    <a href="uploads/<?= $data['file'];?>" download class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> 
-                                                    <a onClick="return confirm('Delete This account?')" href="delete_student.php?d=<?= $data['Id'];?>" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a>
+                                                    <a href="uploads/<?= $data['file'];?>" download class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-download"></i></a> 
+                                                    <a onClick="return confirm('Delete This account?')" href="uploaded_notes_delete.php?d=<?= $data['file'];?>" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a>
                                                 </td>
                                             </tr>
                                             <?php }?>

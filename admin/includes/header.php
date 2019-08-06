@@ -280,7 +280,7 @@
                         </li>
                         <li><a href="message.php"><i class="mdi mdi-drone"></i>Message</a></li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-drone"></i>
+                                <i class="mdi mdi-account"></i>
                                 <span class="hide-menu">Student Information</span>
                             </a>
                             <ul aria-expanded="false" class="collapse">
@@ -289,7 +289,7 @@
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-drone"></i>
+                                <i class="mdi mdi-note"></i>
                                 <span class="hide-menu">Uploaded notes</span>
                             </a>
                             <ul aria-expanded="false" class="collapse">
