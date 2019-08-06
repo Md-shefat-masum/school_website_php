@@ -18,12 +18,13 @@
                         Email = '$Email' ,
                         Phone = '$Phone' ,
                         Gender = '$Gender' ,
-                        Address = '$Address' ,
-                        WHERE Id = '$id'
-                    ";
+                        Address = '$Address' 
+                        WHERE Id = '$id';
+                    --     WHERE Id = '$id';
+                    -- ";
         if(mysqli_query($con,$update)){
             echo "<script> alert('success'); </script>";
-            header('Location: index.php');
+            echo '<script type="text/javascript"> window.location = "all_student.php" </script>';
         }
         else{
             echo "<script> alert('not success'); </script>";

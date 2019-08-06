@@ -83,7 +83,7 @@
                                                 <td><?=$data['Address']?></td>
                                                 <td>
                                                     <a href="update_student.php?u=<?= $data['Id'];?>" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> 
-                                                    <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a>
+                                                    <a onClick="return confirm('Delete This account?')" href="delete_student.php?d=<?= $data['Id'];?>" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a>
                                                 </td>
                                             </tr>
                                             <?php }?>

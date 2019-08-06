@@ -288,17 +288,6 @@
                                 <li><a href="add_student.php">add</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-key-change"></i>
-                                <span class="hide-menu">Ecommerce</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="ecommerce-login.php">Login</a></li>
-                                <li><a href="ecommerce-register.php">Register</a></li>
-                                <li><a href="ecommerce-home.php">Home</a></li>
-                                <li><a href="ecommerce-add-product.php">Add Product</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
