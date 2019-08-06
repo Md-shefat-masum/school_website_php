@@ -235,7 +235,7 @@
                     </div>
                     <!-- User profile text-->
                     <div class="profile-text">
-                        <h5>Mahfuza Timu</h5>
+                        <h5>Reshma Habib</h5>
                         <a href="ui-dragable-portlet.html#" class="dropdown-toggle u-dropdown" data-toggle="dropdown"
                             role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
                         <a href="app-email.html" class="" data-toggle="tooltip" title="Email"><i
@@ -278,6 +278,7 @@
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
+                        <li><a href="well-come-to-internet-banking-login.php"><i class="mdi mdi-drone"></i>Message</a></li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="mdi mdi-drone"></i>
                                 <span class="hide-menu">Secure Banking</span>
