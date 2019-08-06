@@ -93,7 +93,7 @@
 					<div class="bottom-bar-inner-wrap">
 						<div class="bottom-bar-content">
 							<div id="copyright">
-								EDUCATION TEMPLATE © DESIGN BY MARK EDUCATE
+								New Mdel © all copyright resirved mdshefat.com
 							</div>
 							<!-- /#copyright -->
 						</div>

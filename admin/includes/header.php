@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <title>admin panel</title>
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/plugins/gridstack/gridstack.css" rel="stylesheet">
+    <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/plugins/gridstack/gridstack.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
@@ -60,16 +60,16 @@
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="./assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img src="./assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
                             <!-- dark Logo text -->
-                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <img src="./assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo text -->
-                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                            <img src="./assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -106,7 +106,7 @@
                                         <div class="message-center">
                                             <!-- Message -->
                                             <a href="ui-dragable-portlet.html#">
-                                                <div class="user-img"> <img src="../assets/images/users/1.jpg"
+                                                <div class="user-img"> <img src="./assets/images/users/1.jpg"
                                                         alt="user" class="img-circle"> <span
                                                         class="profile-status online pull-right"></span> </div>
                                                 <div class="mail-contnet">
@@ -116,7 +116,7 @@
                                             </a>
                                             <!-- Message -->
                                             <a href="ui-dragable-portlet.html#">
-                                                <div class="user-img"> <img src="../assets/images/users/2.jpg"
+                                                <div class="user-img"> <img src="./assets/images/users/2.jpg"
                                                         alt="user" class="img-circle"> <span
                                                         class="profile-status busy pull-right"></span> </div>
                                                 <div class="mail-contnet">
@@ -126,7 +126,7 @@
                                             </a>
                                             <!-- Message -->
                                             <a href="ui-dragable-portlet.html#">
-                                                <div class="user-img"> <img src="../assets/images/users/3.jpg"
+                                                <div class="user-img"> <img src="./assets/images/users/3.jpg"
                                                         alt="user" class="img-circle"> <span
                                                         class="profile-status away pull-right"></span> </div>
                                                 <div class="mail-contnet">
@@ -136,7 +136,7 @@
                                             </a>
                                             <!-- Message -->
                                             <a href="ui-dragable-portlet.html#">
-                                                <div class="user-img"> <img src="../assets/images/users/4.jpg"
+                                                <div class="user-img"> <img src="./assets/images/users/4.jpg"
                                                         alt="user" class="img-circle"> <span
                                                         class="profile-status offline pull-right"></span> </div>
                                                 <div class="mail-contnet">
@@ -186,12 +186,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    src="../assets/images/users/profile.png" alt="user" class="profile-pic" /></a>
+                                    src="./assets/images/users/profile.png" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                 <ul class="dropdown-user">
                                     <li>
                                         <div class="dw-user-box">
-                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-img"><img src="./assets/images/users/1.jpg" alt="user"></div>
                                             <div class="u-text">
                                                 <h4>Steave Jobs</h4>
                                                 <p class="text-muted">varun@gmail.com</p><a href="pages-profile.html"
@@ -229,7 +229,7 @@
                 <!-- User profile -->
                 <div class="user-profile">
                     <!-- User profile image -->
-                    <div class="profile-img"> <img src="../assets/images/users/profile.png" alt="user" />
+                    <div class="profile-img"> <img src="./assets/images/users/profile.png" alt="user" />
                         <!-- this is blinking heartbit-->
                         <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
                     </div>
