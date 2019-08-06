@@ -2,6 +2,7 @@
     require_once('./includes/header.php'); 
     require_once('./function/function.php'); 
 
+    $id = $_GET['u'];
     if(!empty($_POST)){
         $Name = $_POST['Name'];
         $Department = $_POST['Department'];
@@ -10,10 +11,19 @@
         $Phone = $_POST['Phone'];
         $Gender = $_POST['Gender'];
         $Address = $_POST['Address'];
-        $insert = "INSERT INTO stdinfo(Name,Department,Semester,Email,Phone,Gender,Address)
-        VALUES('$Name','$Department','$Semester','$Email','$Phone','$Gender','$Address')";
-        if(mysqli_query($con,$insert)){
+        $update =   "UPDATE stdinfo SET
+                        Name = '$Name' ,
+                        Department = '$Department' ,
+                        Semester = '$Semester' ,
+                        Email = '$Email' ,
+                        Phone = '$Phone' ,
+                        Gender = '$Gender' ,
+                        Address = '$Address' ,
+                        WHERE Id = '$id'
+                    ";
+        if(mysqli_query($con,$update)){
             echo "<script> alert('success'); </script>";
+            header('Location: index.php');
         }
         else{
             echo "<script> alert('not success'); </script>";
@@ -60,41 +70,48 @@
                             <div class="col-md-6 m-auto">
                                 <div class="card">
                                     <div class="card-body">
+                                        <?php 
+                                            $select = " SELECT * FROM stdinfo WHERE Id = '$id' ";
+                                            $query = mysqli_query($con,$select);
+                                            $data = mysqli_fetch_array($query);
+                                        ?>
                                         <form method="POST" action="" class="form-material m-t-40">
                                             <div class="form-group">
                                                 <label></label>
-                                                <input type="text" name="Name"  placeholder="name" class="form-control form-control-line" value="" autofocus=""> 
+                                                <input type="text" name="Name"  placeholder="name" class="form-control form-control-line" value="<?=$data['Name']?>" autofocus=""> 
                                             </div>
                                             
                                             <div class="form-group">
                                                 <label></label>
-                                                <input type="email" name="Email" placeholder="email" class="form-control form-control-line" value="" autofocus=""> 
+                                                <input type="email" name="Email" placeholder="email" class="form-control form-control-line" value="<?=$data['Email']?>" autofocus=""> 
                                             </div>
                                             <div class="form-group">
                                                 <label></label>
-                                                <input type="number" name="Phone"  placeholder="mobile no" class="form-control form-control-line" value="" autofocus=""> 
+                                                <input type="number" name="Phone"  placeholder="mobile no" class="form-control form-control-line" value="<?=$data['Phone']?>" autofocus=""> 
                                             </div>
                                             <div class="form-group">
                                                 <label></label>
-                                                <input type="text" placeholder="Semester" name="Semester" class="form-control form-control-line" value="" autofocus=""> 
+                                                <input type="text" placeholder="Semester" name="Semester" class="form-control form-control-line" value="<?=$data['Semester']?>" autofocus=""> 
                                             </div>
                                             <div class="form-group">
                                                 <label></label>
-                                                <input type="text" placeholder="Department" name="Department" class="form-control form-control-line" value="" autofocus=""> 
+                                                <input type="text" placeholder="Department" name="Department" class="form-control form-control-line" value="<?=$data['Department']?>" autofocus=""> 
                                             </div>
                                             <div class="form-group">
                                                 <label></label>
-                                                <select type="text" name="Gender" class="form-control form-control-line" value="" autofocus=""> 
+                                                <select type="text" name="Gender" class="form-control form-control-line"  autofocus=""> 
+                                                    <option value="<?=$data['Gender']?>"><?=$data['Gender']?></option>
                                                     <option value="male">male</option>
                                                     <option value="female">female</option>
                                                 </select>
                                             </div>
                                             <div class="form-group" >
                                                 <label></label>
-                                                <textarea type="text" name="Address"  placeholder="Address" rows="4" class="form-control form-control-line" value="" autofocus=""></textarea> 
+                                                <textarea type="text" name="Address"  placeholder="Address" rows="4" class="form-control form-control-line" value="" autofocus=""><?=$data['Address']?></textarea> 
                                             </div>
-                                            <button type="submit" class="btn btn-outline-success">Add info</button>
+                                            <button type="submit" class="btn btn-outline-success">Update info</button>
                                         </form>
+                                        <?php  ?>
                                     </div>
                                 </div>
                             </div>
